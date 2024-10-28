@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+nav{
+    margin-top: 0;
+    background-color: rgb(102, 102, 219);
+    text-align: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    z-index: 1000;
+    padding-bottom: 20px;
+
+}
+
+.logo{
+    width: 120px;
+    text-align: left;
+    filter: invert(1); 
+}
+
+.tittle{
+    font-family: "Press Start 2P", serif;
+    color: white;
+    font-size: 20px;
+}
+
+.block {
+    position: relative; 
+    height: 430px;
+    width: 400px;
+    border: 1px solid gray; 
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.block::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); 
+    filter: grayscale(100%); 
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    
+}
+
+.block:hover::before {
+    opacity: 1; 
+}
+
+.block:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+.cryo{
+ 
+    text-align: center;
+    margin-left: 0;
+    background-color: rgba(119, 212, 255, 0.993);
+    padding-bottom: 19px;
+    padding-top: 10px;
+    color: black;
+    font-family: Arial;
+  
+}
+
+.hydro{
+ 
+    text-align: center;
+    margin-left: 0;
+    background-color: rgba(75, 130, 231, 0.993);
+    padding-bottom: 19px;
+    padding-top: 10px;
+    color: black;
+    font-family: Arial;
+
+}
+
+.electro{
+ 
+    text-align: center;
+    margin-left: 0;
+    background-color: rgba(209, 113, 238, 0.993);
+    padding-bottom: 19px;
+    padding-top: 10px;
+    color: black;
+    font-family: Arial;
+ 
+}
+
+.pyro{
+ 
+    text-align: center;
+    margin-left: 0;
+    background-color: rgba(245, 89, 89, 0.993);
+    padding-bottom: 19px;
+    padding-top: 10px;
+    color: black;
+    font-family: Arial;
+    
+}
+
+.dendro{
+ 
+    text-align: center;
+    margin-left: 0;
+    background-color: rgba(107, 245, 89, 0.993);
+    padding-bottom: 19px;
+    padding-top: 10px;
+    color: black;
+    font-family: Arial;
+  
+}
+
+.anemo{
+ 
+    text-align: center;
+    margin-left: 0;
+    background-color: rgba(103, 219, 240, 0.993);
+    padding-bottom: 19px;
+    padding-top: 10px;
+    color: black;
+    font-family: Arial;
+ 
+}
+
+.geo{
+ 
+    text-align: center;
+    margin-left: 0;
+    background-color: rgba(230, 255, 90, 0.993);
+    padding-bottom: 19px;
+    padding-top: 10px;
+    color: black;
+    font-family: Arial;
+
+}
+
+.none{
+ 
+    text-align: center;
+    margin-left: 0;
+    background-color: rgba(156, 156, 156, 0.993);
+    padding-bottom: 19px;
+    padding-top: 10px;
+    color: black;
+    font-family: Arial;
+
+}
+
+a{
+    text-decoration: none;
+ 
+}
+
+img{
+    display: inline;
+}
+
+
+
+.Feiticeiro{
+    width: 400px; 
+    height: 377px;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; 
+    padding: 20px; 
+    padding-right: 10px;
+    padding-top: 40px;
+}
+
+.info {
+    position: absolute; 
+    color: white; 
+   
+    padding: 5px;
+    border-radius: 5px; 
+    display: none; 
+}
+ 
+  .block:hover .info {
+    display: block; 
+  }
+  
+  
+  .info:nth-of-type(1) { top: 10px; left: 0px; }
+  .info:nth-of-type(2) { top: 40px; left: 0px; }
+  .info:nth-of-type(3) { top: 70px; left: 0px; }
+  .info:nth-of-type(4) { top: 100px; left: 0px; }
+
+.info{
+    font-family: Arial;
+    font-size: 18px;
+}
+
+.infocryo{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 19px;
+    color: rgb(129, 213, 252);
+    border: 1px solid rgb(129, 213, 252);
+    border-radius: 5px;
+    margin-right:10px ;
+
+}
+
+.infohydro{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 19px;
+    color:  rgba(123, 166, 245, 0.993);
+    border: 1px solid  rgba(123, 166, 245, 0.993);
+    border-radius: 5px;
+    margin-right:10px ;
+}
+
+.infoelectro{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 19px;
+    color:  rgba(229, 168, 248, 0.993);
+    border: 1px solid   rgba(229, 168, 248, 0.993);
+    border-radius: 5px;
+    margin-right:10px ;
+
+
+}
+
+.infopyro{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 19px;
+    color:  rgba(245, 150, 150, 0.993);
+    border: 1px solid   rgba(245, 150, 150, 0.993);
+    border-radius: 5px;
+    margin-right:10px ;
+
+}
+
+.infonone{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 19px;
+    color: rgba(255, 253, 253, 0.993);
+    border: 1px solid   rgba(255, 255, 255, 0.993);
+    border-radius: 5px;
+    margin-right:10px ;
+
+}
+
+.infogeo{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 19px;
+    color:  rgba(230, 255, 90, 0.993);
+    border: 1px solid  rgba(230, 255, 90, 0.993);
+    border-radius: 5px;
+    margin-right:10px ;
+}
+
+.infodendro{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 19px;
+    color: rgba(127, 245, 112, 0.993);
+    border: 1px solid rgba(127, 245, 112, 0.993);
+    border-radius: 5px;
+    margin-right:10px ;
+
+}
+
+.infoanemo{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 19px;
+    color: rgba(103, 219, 240, 0.993);
+    border: 1px solid rgba(103, 219, 240, 0.993);
+    border-radius: 5px;
+    margin-right:10px ;
+}
+
+
+footer{
+    background-color: rgb(102, 102, 219);
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
+    position: relative; 
+    bottom: 0;
+    width: 100%; 
+    font-family: "Press Start 2P", serif;
+}
